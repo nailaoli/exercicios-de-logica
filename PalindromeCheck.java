@@ -33,7 +33,7 @@ public class PalindromeCheck{
     return true;
   }
 
-// Usando método para reverter a StringBuilder
+// Usando método para reverter o String
   public static boolean isPalindrome3(String word) {
     String wordLowerCase = word.toLowerCase();
     StringBuilder sb = new StringBuilder("");
@@ -47,9 +47,9 @@ public class PalindromeCheck{
 
 
   public static void main(String... args){
-    System.out.println(String.valueOf(isPalindrome("Naila"))); //Output: false
-    System.out.println(String.valueOf(isPalindrome("Arara"))); //Output: true
-    System.out.println(String.valueOf(isPalindrome3("Arara"))); //Output: true
+    System.out.println(String.valueOf(isPalindrome("Naila"))); // Output: false
+    System.out.println(String.valueOf(isPalindrome("Arara"))); // Output: true
+    System.out.println(String.valueOf(isPalindrome3("Arara"))); // Output: true
 
   }
 
