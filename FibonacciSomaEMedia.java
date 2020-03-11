@@ -1,7 +1,10 @@
+// Escrever um programa que calcule a soma e a média dos "n" elementos da série
+// Fibonacci.
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Fibonacci {
+public class FibonacciSomaEMedia {
 
 	static long calcularSoma(int n) {
 
