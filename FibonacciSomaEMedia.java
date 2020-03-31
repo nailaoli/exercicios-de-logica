@@ -1,7 +1,6 @@
 // Escrever um programa que calcule a soma e a média dos "n" elementos da série
 // Fibonacci.
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FibonacciSomaEMedia {
@@ -9,7 +8,7 @@ public class FibonacciSomaEMedia {
 	static long calcularSoma(int n) {
 
 		if (n <= 0)
-			throw new InputMismatchException("O número inserido é inválido");
+			throw new IllegalArgumentException("O número inserido é inválido");
 
 		if (n == 1)
 			return 1;
@@ -44,7 +43,7 @@ public class FibonacciSomaEMedia {
 				System.out.println("SOMA: " + calcularSoma(numero));
 				System.out.println("MÉDIA: " + calcularMedia(numero));
 				rodando = false;
-			} catch (InputMismatchException e) {
+			} catch (IllegalArgumentException e) {
 				System.out.println(e.getMessage());
 				sc.hasNextLine();
 			}
